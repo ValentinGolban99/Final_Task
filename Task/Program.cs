@@ -2,4 +2,14 @@
 // длина которых меньше или равна 3 символам. Первоначальный массив можно ввести с клавиатуры,
 // либо ввести на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями,
 // лучше обойтись исключительно массивами.
+void PrintArray(string[] InitialArray)
+{
+    for (int i = 0; i < InitialArray.GetLength(0); i++)
+    {
+        Console.Write(InitialArray[i] + "\t"); 
+    Console.Write("");
+    }
+}
 
+string[] InitialArray = {"hello", "world", "2", ":-)"};
+PrintArray(InitialArray);
